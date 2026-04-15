@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+p{
+    color:#2C3E50;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container{
+    max-width: 1921px;
+    margin: 0 auto;
+    border: 1px solid #ddd; 
+
+}
+
+header{
+    padding: 10px;
+    margin-top: 50px;
+}
+
+#imgHeader{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    width:300px;
+    text-transform: capitalize;
+    color: #000;
+    border-top: 5px solid goldenrod;
+    border-bottom: 12px solid #0A3D62;
+    padding: 15px 0;
+    font-size: 2.5rem;
+}
+
+h3{
+    color: #2C3E50;
+    font-weight: 900;
+}
+
+#tereza{
+    color:#0A3D62;
+    font-weight: 900;
+}
+
+#pratica{
+    width:300px;
+    border-bottom: 3px solid goldenrod;
+    margin-top: 50px;
+    margin-bottom: 20px 0px;
+    padding: 10px 0px;
+    letter-spacing: 2px;
+}
+
+#textoPratica{
+    margin: 20px 0px;
+}
+
+
+#solucoes{
+    margin-top: 20px;
+    padding: 10px;
+    
+   
+}
+
+#tituloSolucoes{
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+#textoSolucoes{
+    width:95%;
+    border-bottom: 8px solid #0A3D62;
+    padding: 10px 0px;
+   
+   
+}
+
+.paragrafoSolucoes{
+    width:95%;
+    padding: 10px;
+   
+}
+
+#especialidades{   
+    margin: 100px auto;
+    padding: 10px;
+    background-color:#2980B9;
+    
+}
+
+
+#tituloEspecialidades{
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px 0px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.paragrafoEspecialidades{
+    color: #ddd;
+    width: 95%;
+    margin: 15px 0px;
+}
+
+
+#btnContato,#btnContato1{
+    display: block;
+    width: 200px;
+    margin: 20px 0px;
+    padding: 15px;
+    background-color: #0A3D62;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border: none;   
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+#btnContato1{
+    background-color: #0A3D62;
+}
+
+
+#btnContato:hover{
+    background-color: #fff;
+    transition: 0.3s;
+    color: #2980B9;
+}
+
+#btnContato1:hover{
+    background-color: #2980B9;
+    transition: 0.3s;
+    color: #fff;
+}
+
+#tituloServicos{
+    padding: 0px 20px;
+     letter-spacing: 4px;
+     font-size: 1.5rem;
+     color: #2C3E50;
+}
+
+
+
+.boxServicos{
+    margin: 30px 0px;
+    padding: 10px 20px;
+}
+
+.imgServicos{
+    width: 15%;
+    height: auto;
+}
+
+footer{
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #0A3D62;
+    text-align: center;
+    letter-spacing: 1px;
+    
+}
+
+
+.conteudoFooter{
+    width: 95%;
+    margin:25px auto;
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+.imgFooter{
+    width: 15%;
+}
+
+.paragrafoFooter{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#autor{
+    color: #2C3E50;
+    font-size: .8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media(min-width:600px){
+
+    #textoServicos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;}
+   
+
+    .boxServicos{
+        width: 45%;
+        padding: 0;
+        font-size: .9rem;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+
+    .conteudoFooter{
+        width: 45%;
+    }
+}
+
+
+
+
+@media(min-width:768px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1{
+        width: 400px;
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+
+    #imgHeader{
+        width: 300px;
+    }
+
+    
+
+    #pratica{
+        width: 400px;
+    }
+
+    #textoPratica{
+     width: 400px;
+     margin-top: 0;
+    }
+
+
+        
+    #solucoes{
+     width: 96%;  
+     margin: auto;
+     margin-top: 100px;
+     margin-bottom: 0px;
+     letter-spacing: 1px;
+    }
+
+    #tituloSolucoes{
+     margin: 20px 0px;   
+    }
+
+    #tituloEspecialidades{
+       padding-left: 30px;
+    }
+
+    
+    #textosSolucoes{
+        border: none;
+        column-count: 3;
+    }
+
+     .textoSolucoes2{
+        width: 400px;
+    }  
+    
+    
+     .paragrafoEspecialidades{
+        width: 400px;
+     }
+
+   
+     #especialidades{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #textosEspecialidades{
+        width:100%;
+        
+    }
+
+    .paragrafoEspecialidades{
+        width: 90%;
+        margin: 25px auto;
+        letter-spacing: 2px;
+    }
+
+    #btnContato{
+        margin: 50px 40px;
+    }
+
+    .boxServicos{
+       
+        font-size: 1rem;
+    }
+
+     .imgServicos{
+        width: 20%;
+    }
+}
+
+
+@media(min-width:900px){
+    header{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #pratica,h1{
+        width: 350px;
+    }
+
+    #solucoes{
+        width: 93%;
+        margin: 100px auto;
+    }
+
+     .textoSolucoes2{
+        width: 400px;
+    }
+
+     h1{
+        font-size: 3.5rem;
+    }
+
+  
+}
+
+
+@media(min-width:1024px){
+    header{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #pratica,h1{
+        width: 500px;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    #imgHeader{
+        width:400px ;
+    }
+
+   #especialidades{
+    padding: 50px 0px;
+   } 
+
+   #tituloEspecialidades{
+    width:90%;
+    font-size: 2.5rem;
+    text-align: center;
+   } 
+
+   
+   #textosEspecialidades{
+    width: 70%;
+    
+   }
+
+   .paragrafoEspecialidades{
+    text-align: center;
+    
+   }
+
+   #btnContato{
+    margin: 0 auto;
+     display: block;
+    
+   }
+
+   
+    .textoSolucoes2{
+        width: 400px;
+    }
+
+    
+
+    #tituloServicos{
+        margin-left: 7.5%;
+    }
+
+    #textoServicos{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .boxServicos{
+        width: 35%;
+       
+    }
+
+    
+}
+
+
+@media(min-width:1200px){
+    header{
+       width:1100px;
+       margin: 0 auto;
+    }
+
+    #solucoes{
+        width: 91%;
+        margin:100px auto;
+    }
+
+     .textoSolucoes2{
+        width: 400px;
+    }
+
+    #pratica,h1{
+        width: 500px;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+        #imgHeader{
+            width:450px ;
+        }
+
+    
+
+    .imgServicos{
+        width: 13%;
+    }
+
+    .imgFooter{
+        width: 20%;
+    }
+
+    .conteudoFooter{
+        width: 24%;
+        height:250px;
+        object-fit: cover;
+    }
+
+    footer{
+        height: 500px;
+    }
+
+    
+    
+}
+
+
+@media(min-width:1355px){
+    header{
+        width: 85%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    #solucoes{
+        width: 82%;
+        margin: 100px auto;
+    }
+
+     .textoSolucoes2{
+        width: 400px;
+    }
+
+     #pratica,h1{
+        width: 500px;
+    }
+
+   
+
+    
+
+}
+
+
+@media(min-width:1440px){
+    header{
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
