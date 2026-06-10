@@ -26,17 +26,24 @@ mobileMenuButton.setAttribute('aria-expanded', 'false');
 });
 
 
+
 // Cookie Banner Logic
 const cookieBanner = document.getElementById('cookie-banner');
 const acceptButton = document.getElementById('accept-cookies');
 
-// Check if user has already accepted (optional enhancement for persistence, but here we follow basic requirement)
-if (acceptButton && cookieBanner) {
-acceptButton.addEventListener('click', () => {
-cookieBanner.classList.add('translate-y-12', 'opacity-0');
-setTimeout(() => {
-cookieBanner.remove();
-}, 500);
-});
+// Verifica se o usuário já aceitou anteriormente
+if (localStorage.getItem('cookiesAceitos') === 'true') {
+  cookieBanner?.remove();
+} else if (acceptButton && cookieBanner) {
+  acceptButton.addEventListener('click', () => {
+    // Salva a decisão no navegador
+    localStorage.setItem('cookiesAceitos', 'true');
+    
+    // Animação para esconder
+    cookieBanner.classList.add('translate-y-12', 'opacity-0');
+    setTimeout(() => {
+      cookieBanner.remove();
+    }, 500);
+  });
 }
 
